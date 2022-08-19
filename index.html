@@ -110,24 +110,46 @@
 										Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите
 										на этот список:
 								</p>
-								<img class="article__img" src="img/2lastPossible/image1.jpg" alt="">
-								<img class="article__img" src="img/2lastPossible/image2.jpg" alt="">
+								<div class="article__two-block-one">
+										<img class="article__img" src="img/2lastPossible/image1.jpg" alt="">
+								</div>
+								<div class="article__two-block-two article__block-centered">
+										<img class="article__img" src="img/2lastPossible/image2.jpg" alt="">
+								</div>
 								<p class="article__text">
 										Отступ делают за счёт соседних элементов, а не дочерних:
 								</p>
-								<div>
-										<img src="" alt="">
-										<p>
+								<div class="article__two-block-three">
+										<img class="article__img" src="img/2lastPossible/image3.jpg" alt="">
+								</div>
+								<div class="article__two-block-four">
+										<p class="article__text">
 												ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы
 												разделить списки.
 										</p>
 								</div>
-								<p></p>
-								<p></p>
-								<img src="" alt="">
-								<p></p>
-								<img src="" alt="">
-								<p></p>
+								<p class="article__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке
+										&lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не
+										рекомендуется.
+								</p>
+								<p class="article__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно
+										больше.</p>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/2lastPossible/image4.jpg"
+										     alt=""></div>
+								<p class="article__text">
+										В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно
+										для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по
+										умолчанию необходимо обнулить.
+								</p>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/2lastPossible/image5.jpg" alt="">
+								</div>
+								<p class="article__text">
+										Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать
+										после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки
+										с нестандартной структурой отступов.
+								</p>
 						</div>
 				</section>
 
@@ -136,19 +158,32 @@
 								<h2 class="article__subtitle" id="article_three">
 										Для последнего элемента группы отступ всегда обнуляется
 								</h2>
-								<p></p>
-								<p></p>
-								<img src="" alt="">
-								<p></p>
-								<img src="" alt="">
-								<img src="" alt="">
-								<p></p>
-								<img src="" alt="">
-								<img src="" alt="">
-								<p></p>
-								<img src="" alt="">
-								<p></p>
-								<img src="" alt="">
+								<p class="article__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+								<p class="article__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего
+										блока расстояние такое же.</p>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image1.jpg"
+								                                          alt=""></div>
+								<p class="article__text">В соответствии со вторым принципом: последний margin обнуляется, а нижний
+										отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон,
+										если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image2.jpg"
+								                                          alt=""></div>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image3.jpg"
+								                                          alt=""></div>
+								<p class="article__text">Для большего понимания рассмотрим другой пример, который часто встречается на
+										практике:</p>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image4.jpg"
+								                                          alt=""></div>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image4.5.jpg"
+								                                          alt=""></div>
+								<p class="article__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска.
+										Отступы между пунктами меню задаются так:</p>
+								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image5.jpg"
+								                                          alt=""></div>
+								<p class="article__text">Советую использовать псевдоклассы :last-child чаще других, например так:
+								</p>
+								<div class="article__block-no-margin"><img class="article__img" src="img/3lastGroupElement/image6.jpg"
+								                                           alt=""></div>
 						</div>
 				</section>
 

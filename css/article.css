@@ -97,3 +97,29 @@
     float: left;
     margin-right: 40px;
 }
+
+.article__two-block-one {
+    margin-bottom: 30px;
+}
+
+.article__block-centered {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article__block-no-margin{
+    text-align: center;
+}
+
+.article__two-block-three {
+    border-top: 1px solid black;
+}
+
+.article__two-block-four {
+    padding: 15px 30px ;
+    margin-bottom: 30px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom:  1px solid black;
+}
+
