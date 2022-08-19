@@ -30,6 +30,10 @@
     padding-bottom: 30px;
 }
 
+.article__text_color {
+    color: #5E5E5E;
+}
+
 .introduction {
     margin-bottom: 50px;
 }
