@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<link rel="preload" href="fonts/Roboto-Black.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="stylesheet" href="style.css">
+		<title>Отступы в верстке</title>
+</head>
+<body>
+		<article class="article">
+
+				<div class="introduction">
+						<div class="container">
+								<h1 class="article__title">
+										Отступы в вёрстке: margin и padding
+								</h1>
+								<p class="article__text">
+										В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей
+										читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они
+										сильно
+										влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в
+										любую его часть. При этом другие части кода продолжат нормально работать.
+								</p>
+								<p class="article__text">
+										Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти
+										знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных
+										верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
+								</p>
+						</div>
+				</div>
+
+				<section>
+						<div class="article__red">
+								<div class="container">
+										<h2 class="article__subtitle_big">
+												Содержание:
+										</h2>
+										<nav class="article__navigation">
+												<ol class="article__list">
+														<li class="article__item"><a href="#article_one" class="article__link">Отступ задается от
+																предыдущего
+																элемента к следующему</a></li>
+														<li class="article__item"><a href="#article_two" class="article__link">Отступ задается
+																последнему
+																возможному элементу в DOM-дереве</a></li>
+														<li class="article__item"><a href="#article_three" class="article__link">Для последнего
+																элемента
+																группы
+																отступ обнуляется</a></li>
+												</ol>
+										</nav>
+								</div>
+						</div>
+				</section>
+
+				<section>
+						<div class="container">
+								<h2 class="article__subtitle" id="article_one">
+										Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева
+										направо.
+								</h2>
+								<div class="article__one-block-one">
+										<img class="article__img" src="img/1prevToNext/image1.jpg"
+										     alt="отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо">
+								</div>
+								<div class="article__one-block-two">
+										<p class="article__text">
+												ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
+										</p>
+										<p class="article__text">
+												Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу,
+												поэтому используется margin-right и margin-bottom.
+										</p>
+										<p class="article__text">
+												(!) Свойства margin-left и margin-top используются крайне редко.
+										</p>
+										<p class="article__text">
+												Для padding верно обратное. Исключением является его применения в декоративных целях,
+												например, для увеличения области ссылки.
+										</p>
+								</div>
+								<div class="article__one-block-three">
+										<p class="article__text">
+												Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
+										</p>
+										<p class="article__text">
+												Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент
+												не будет толкать сам себя.
+										</p>
+										<p class="article__text">
+												Изначально элемент статичен, а его положение может меняться только под воздействием свойств
+												других блоков или свойств родителя.
+										</p>
+								</div>
+								<div class="article__one-block-four">
+										<img class="article__img" src="img/1prevToNext/image2.jpg"
+										     alt="Отступ задается последнему возможному элементу в DOM-дереве">
+								</div>
+						</div>
+				</section>
+
+				<section>
+						<div class="container">
+								<h2 class="article__subtitle" id="article_two">
+										Отступ задается последнему возможному элементу в DOM-дереве
+								</h2>
+								<p class="article__text">
+										Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите
+										на этот список:
+								</p>
+								<img class="article__img" src="img/2lastPossible/image1.jpg" alt="">
+								<img class="article__img" src="img/2lastPossible/image2.jpg" alt="">
+								<p class="article__text">
+										Отступ делают за счёт соседних элементов, а не дочерних:
+								</p>
+								<div>
+										<img src="" alt="">
+										<p>
+												ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы
+												разделить списки.
+										</p>
+								</div>
+								<p></p>
+								<p></p>
+								<img src="" alt="">
+								<p></p>
+								<img src="" alt="">
+								<p></p>
+						</div>
+				</section>
+
+				<section>
+						<div class="container">
+								<h2 class="article__subtitle" id="article_three">
+										Для последнего элемента группы отступ всегда обнуляется
+								</h2>
+								<p></p>
+								<p></p>
+								<img src="" alt="">
+								<p></p>
+								<img src="" alt="">
+								<img src="" alt="">
+								<p></p>
+								<img src="" alt="">
+								<img src="" alt="">
+								<p></p>
+								<img src="" alt="">
+								<p></p>
+								<img src="" alt="">
+						</div>
+				</section>
+
+				<section>
+						<div class="article__red">
+								<h2 class="article__subtitle article__subtitle_big" id="article_3">
+										Содержание:
+								</h2>
+								<ul class="article__list">
+										<li class="article__item"></li>
+										<li class="article__item"></li>
+										<li class="article__item"></li>
+										<li class="article__item"></li>
+										<li class="article__item"></li>
+								</ul>
+
+								<p class="article__text">
+
+								</p>
+						</div>
+				</section>
+
+		</article>
+</body>
+</html>
