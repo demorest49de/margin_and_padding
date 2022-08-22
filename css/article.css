@@ -25,7 +25,6 @@
     margin: 0 auto;
     padding: 60px 130px 50px 130px;
 }
-
 .article__text:not(:nth-last-child(1)) {
     padding-bottom: 30px;
 }
@@ -123,6 +122,10 @@
 .article__block-centered {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.article__img_block{
+    display: block;
 }
 
 .article__block-no-margin {
