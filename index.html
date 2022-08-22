@@ -38,7 +38,7 @@
 												Содержание:
 										</h2>
 										<nav class="article__navigation">
-												<ol class="article__list-introduction article__li-padding ">
+												<ol class="article__list-introduction article__li-padding">
 														<li class="article__item"><a href="#article_one" class="article__link">Отступ задается от
 																предыдущего
 																элемента к следующему</a></li>
@@ -61,29 +61,32 @@
 										Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева
 										направо.
 								</h2>
-								<div class="article__one-block-one">
+								<div class="article__block-one-one">
 										<img class="article__img" src="img/1prevToNext/image1.jpg"
-										     alt="отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо">
+										     alt="Пример отступа margin">
 								</div>
-								<div class="article__one-block-two">
+								<div class="article__block-one-two">
 										<p class="article__text">
-												ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
+												<strong class="article__text_bold">ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего
+												элемента к следующему.
 										</p>
 										<p class="article__text">
-												Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу,
-												поэтому используется margin-right и margin-bottom.
+												Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или
+												снизу,
+												поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
 										</p>
 										<p class="article__text">
-												(!) Свойства margin-left и margin-top используются крайне редко.
+												(!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.
 										</p>
 										<p class="article__text">
-												Для padding верно обратное. Исключением является его применения в декоративных целях,
+												Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях,
 												например, для увеличения области ссылки.
 										</p>
 								</div>
-								<div class="article__one-block-three">
+								<div class="article__block-one-three">
 										<p class="article__text">
-												Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
+												Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i>
+												родителя.
 										</p>
 										<p class="article__text">
 												Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент
@@ -94,9 +97,9 @@
 												других блоков или свойств родителя.
 										</p>
 								</div>
-								<div class="article__one-block-four">
+								<div class="article__block-one-four">
 										<img class="article__img" src="img/1prevToNext/image2.jpg"
-										     alt="Отступ задается последнему возможному элементу в DOM-дереве">
+										     alt="Пример отступа padding">
 								</div>
 						</div>
 				</section>
@@ -110,26 +113,31 @@
 										Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите
 										на этот список:
 								</p>
-								<div class="article__two-block-one">
-										<img class="article__img" src="img/2lastPossible/image1.jpg" alt="">
+								<div class="article__block-two-one">
+										<img class="article__img" src="img/2lastPossible/image1.jpg"
+										     alt="Пример отступа между соседними элементами">
 								</div>
-								<div class="article__two-block-two article__block-centered">
-										<img class="article__img" src="img/2lastPossible/image2.jpg" alt="">
+								<div class="article__block-two-two article__block-centered">
+										<img class="article__img" src="img/2lastPossible/image2.jpg"
+										     alt="Пример отступа между соседними элементами">
 								</div>
 								<p class="article__text">
 										Отступ делают за счёт соседних элементов, а не дочерних:
 								</p>
-								<div class="article__two-block-three">
-										<img class="article__img" src="img/2lastPossible/image3.jpg" alt="">
+								<div class="article__block-two-three">
+										<img class="article__img" src="img/2lastPossible/image3.jpg"
+										     alt="Пример отступа между соседними элементами">
 								</div>
-								<div class="article__two-block-four">
+								<div class="article__block-two-four">
 										<p class="article__text article__text_color">
-												ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы
+												<strong class="article__text_bold">ВАЖНО</strong>: здесь <i>.list-item</i> — последний возможный
+												элемент в котором мы задаём отступ, чтобы
 												разделить списки.
 										</p>
 								</div>
-								<p class="article__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке
-										&lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не
+								<p class="article__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке
+										<i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать
+										не
 										рекомендуется.
 								</p>
 								<p class="article__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно
@@ -138,12 +146,15 @@
 										<img class="article__img" src="img/2lastPossible/image4.jpg"
 										     alt=""></div>
 								<p class="article__text">
-										В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно
-										для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по
+										В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>.
+										Именно
+										для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства
+										<i>margin</i>, которые стоят по
 										умолчанию необходимо обнулить.
 								</p>
 								<div class="article__block-centered">
-										<img class="article__img" src="img/2lastPossible/image5.jpg" alt="">
+										<img class="article__img" src="img/2lastPossible/image5.jpg"
+										     alt="Пример отступа между соседними элементами">
 								</div>
 								<p class="article__text">
 										Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать
@@ -161,29 +172,46 @@
 								<p class="article__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
 								<p class="article__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего
 										блока расстояние такое же.</p>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image1.jpg"
-								                                          alt=""></div>
-								<p class="article__text">В соответствии со вторым принципом: последний margin обнуляется, а нижний
-										отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон,
-										если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image2.jpg"
-								                                          alt=""></div>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image3.jpg"
-								                                          alt=""></div>
-								<p class="article__text">Для большего понимания рассмотрим другой пример, который часто встречается на
-										практике:</p>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image4.jpg"
-								                                          alt=""></div>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image4.5.jpg"
-								                                          alt=""></div>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image1.jpg"
+										     alt="Пример отступа для последнего элемента в списке">
+								</div>
+								<p class="article__text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а
+										нижний
+										отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для
+										секции с обоих сторон,
+										если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и
+										<i>padding-bottom:50px</i>.</p>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image2.jpg"
+										     alt="Пример отступа для последнего элемента в списке">
+								</div>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image3.jpg"
+										     alt="Пример отступа для последнего элемента в списке">
+								</div>
+								<p class="article__text">
+										Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image4.jpg"
+										     alt="Пример отступа для последнего элемента меню">
+								</div>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image4.5.jpg"
+										     alt="Пример отступа для последнего элемента меню">
+								</div>
 								<p class="article__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска.
 										Отступы между пунктами меню задаются так:</p>
-								<div class="article__block-centered"><img class="article__img" src="img/3lastGroupElement/image5.jpg"
-								                                          alt=""></div>
+								<div class="article__block-centered">
+										<img class="article__img" src="img/3lastGroupElement/image5.jpg"
+										     alt="Пример отступа для последнего элемента меню">
+								</div>
 								<p class="article__text">Советую использовать псевдоклассы :last-child чаще других, например так:
 								</p>
-								<div class="article__block-no-margin"><img class="article__img" src="img/3lastGroupElement/image6.jpg"
-								                                           alt=""></div>
+								<div class="article__block-no-margin">
+										<img class="article__img" src="img/3lastGroupElement/image6.jpg"
+										     alt="Пример отступа для последнего элемента меню">
+								</div>
 						</div>
 				</section>
 
@@ -194,19 +222,19 @@
 												Подытожим:
 										</h2>
 										<ul class="article__list-total article__li-padding">
-												<li class="article__item">
+												<li class="article__item article__item_color">
 														отступы задаём от предыдущего элемента к следующему
 												</li>
-												<li class="article__item">
+												<li class="article__item article__item_color">
 														используем только margin-right и margin-bottom
 												</li>
-												<li class="article__item">
+												<li class="article__item article__item_color">
 														внешние отступы задаются только между соседями
 												</li>
-												<li class="article__item">
+												<li class="article__item article__item_color">
 														внутренний отступ задаём самому верхнему элементу в дом дереве
 												</li>
-												<li class="article__item">
+												<li class="article__item article__item_color">
 														последнему элементу группы отступ всегда обнуляем
 												</li>
 										</ul>
