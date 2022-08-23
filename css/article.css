@@ -63,9 +63,7 @@
 }
 
 .article__red {
-    padding-top: 25px;
-    padding-left: 45px;
-    padding-bottom: 25px;
+    padding: 25px 45px;
     background: #F1F1F1;
     border-radius: 10px;
 }
