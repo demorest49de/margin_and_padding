@@ -68,6 +68,10 @@
     border-radius: 10px;
 }
 
+.article__italic{
+    font-style: italic;
+}
+
 .article__list-introduction {
     list-style-type: decimal;
     text-decoration: underline;
