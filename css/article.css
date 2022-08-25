@@ -26,7 +26,7 @@
     padding: 60px 130px 50px 130px;
 }
 .article__text:not(:nth-last-child(1)) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .article__text_bold{
@@ -35,10 +35,6 @@
 
 .article__text_color {
     color: #5E5E5E;
-}
-
-.introduction {
-    margin-bottom: 50px;
 }
 
 .article__title {
@@ -59,7 +55,7 @@
     font-weight: 700;
     font-size: 44px;
     line-height: 120%;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .article__red {
